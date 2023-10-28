@@ -1,0 +1,9 @@
+https://www.kaggle.com/datasets/lokeshparab/amazon-products-dataset/
+
+docker pull ubuntu
+
+docker run  --name PANDAS_REG_LIN --rm -it -v $HOME/Desktop/eCommercePANDAS:/PANDAS -w /PANDAS --shm-size=1g --ulimit memlock=-1 -p 8888 ubuntu
+
+Baixar o mongoDB neste link: https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/
+
+jupyter-lab --ip 0.0.0.0 --no-browser --allow-root
