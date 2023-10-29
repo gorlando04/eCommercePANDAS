@@ -20,6 +20,8 @@ pip install numpy scipy
 pip install scikit-learn
 pip install pandas
 pip install jupyterlab
+pip install seaborn
+pip install pmdarima
 
 apt-get install -y gnupg curl
 curl -fsSL https://pgp.mongodb.com/server-7.0.asc | \
