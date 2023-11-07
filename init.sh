@@ -48,3 +48,9 @@ pip install pymongo
 apt install unzip
 clear 
 
+pip install pytelegrambotapi
+
+cd createDB/
+python3 initDB.py
+
+cd ..
