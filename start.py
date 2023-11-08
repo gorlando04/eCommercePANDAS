@@ -8,7 +8,7 @@ from functionalities.comparision import *
 
 
 # Chave da API que o bot foi criado.
-CHAVE_API = "6771215577:AAFLc_bogeN49ADRn7PcaoOKM9zsF6AEO2Y"
+CHAVE_API = "geovanne"
 
 bot = telebot.TeleBot(CHAVE_API)
 
