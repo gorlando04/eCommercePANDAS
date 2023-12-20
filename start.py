@@ -121,6 +121,11 @@ def store_handler(mensagem):
 
     store_id = mensagem.text
 
+    if int(store_id) > 1115:
+        bot.send_message(mensagem.chat.id, f"A loja {store_id} não está em nosso sistema. Clique em /iniciar")
+
+        return 
+
     sent_msg = bot.send_message(mensagem.chat.id, f"Qual a senha para acessar as informações da loja {store_id}")
     bot.register_next_step_handler(sent_msg, pass_handler) #Next message will call the age_handler function
 
