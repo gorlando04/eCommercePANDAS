@@ -1,13 +1,14 @@
 import seaborn as sns
 import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
 
 
 def plot_grafico(x, y,title,day=False,days=None):
 
     
     plt.rcParams["figure.figsize"] = (20,8)
-    plt.clf()
+    
     
     # Pega as informações do cliente
     height = x
@@ -48,6 +49,7 @@ def plot_grafico(x, y,title,day=False,days=None):
     plt.show()
 
     plt.savefig('imgs/return.png')
+    plt.clf()
 
 
 def plot_grafico_comparacao(x1,y1,x2,title,store_id,store_type):
@@ -83,3 +85,38 @@ def plot_grafico_comparacao(x1,y1,x2,title,store_id,store_type):
     plt.show()
 
     plt.savefig('imgs/return.png')
+    plt.clf()
+
+
+def plot_grafico_prediction(model,forecast,i):
+
+
+    fig, ax = plt.subplots(figsize=(10, 5))
+    model.plot(forecast,uncertainty=True,  ax=ax)
+
+    ax.set_xbound(lower=pd.Timestamp('2015-07-31'), 
+                upper=pd.Timestamp('2015-08-30'))
+    ax.set_xlabel('Data')
+    ax.set_ylabel('Vendas')
+    ax.set_xticklabels(ax.get_xticklabels(), rotation=35, ha='right', fontsize=8)
+    plot = plt.suptitle(f'Previsão de Vendas Loja {i}')
+    plt.show()
+
+    plt.savefig('imgs/return.png')
+
+
+    # Cálculo de Métricas
+
+    # Substituindo os valores negativos por zero
+    forecast['yhat'] = forecast['yhat'].clip(lower=0)
+
+    total = forecast['yhat'].sum()
+
+    mean = forecast['yhat'].mean()
+
+    forecast_sorted = forecast.sort_values(by='yhat')
+    max_day, max_sale = forecast_sorted[['ds', 'yhat']].iloc[-1]
+
+
+
+    return total, mean, (max_day.date(),max_sale)

@@ -25,7 +25,7 @@ def collections_request(store_id) :
         year = document['year']
         month = document['month']
         for daily in document['logs']:
-            input_dic = {'ID_store':store_id,'MeanSales':mean,'Open':daily['Open'],'StateHoliday':daily['StateHoliday'],'SchoolHoliday':daily['SchoolHoliday'],
+            input_dic = {'ID_store':store_id,'Open':daily['Open'],'StateHoliday':daily['StateHoliday'],'SchoolHoliday':daily['SchoolHoliday'],
                     'Date':f"{year}-{month}-{daily['Day']}",'Sales':daily['Sales'] }
             input_list.append(input_dic)
         
