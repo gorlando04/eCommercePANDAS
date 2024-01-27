@@ -91,19 +91,21 @@ def plot_grafico_comparacao(x1,y1,x2,title,store_id,store_type):
 def plot_grafico_prediction(model,forecast,i):
 
 
-    fig, ax = plt.subplots(figsize=(10, 5))
+    fig, ax = plt.subplots(figsize=(20, 8))
     model.plot(forecast,uncertainty=True,  ax=ax)
 
     ax.set_xbound(lower=pd.Timestamp('2015-07-31'), 
                 upper=pd.Timestamp('2015-08-30'))
     ax.set_xlabel('Data')
     ax.set_ylabel('Vendas')
-    ax.set_xticklabels(ax.get_xticklabels(), rotation=35, ha='right', fontsize=8)
+    ax.set_yticklabels(ax.get_yticklabels(), rotation=0, ha='right',fontsize=12)
+    ax.set_xticklabels(ax.get_xticklabels(), rotation=0, ha='right',fontsize=12)
     plot = plt.suptitle(f'Previsão de Vendas Loja {i}')
     plt.show()
 
     plt.savefig('imgs/return.png')
-
+    ax.clear()
+    plt.clf()
 
     # Cálculo de Métricas
 
