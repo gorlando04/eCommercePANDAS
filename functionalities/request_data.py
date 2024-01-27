@@ -4,8 +4,6 @@ from pymongo import timeout
 import numpy as np
 from pymongo import MongoClient
 
-
-
 def collections_request(store_id) :
 
     input_list = []
