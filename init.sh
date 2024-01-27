@@ -49,6 +49,8 @@ apt install unzip
 clear 
 
 pip install pytelegrambotapi
+pip install prophet
+pip install plotly
 
 cd createDB/
 python3 initDB.py

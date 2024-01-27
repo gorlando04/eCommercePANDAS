@@ -4,15 +4,26 @@ from functionalities.maximum import *
 from functionalities.sum_ import *
 from functionalities.mean_ import *
 from functionalities.comparision import *
+from functionalities.time_series import *
 
 
 
 # Chave da API que o bot foi criado.
-CHAVE_API = "geovanne"
+CHAVE_API = "6789241160:AAH5q8lbQuIvrEAmBEcExvOrASGnHNJQfEI"
 
 bot = telebot.TeleBot(CHAVE_API)
 
 photo_path = '/PANDAS/imgs/return.png'
+
+def next_action(mensagem):
+
+    texto = f"""
+    O que voce deseja fazer agora (Clique no item):
+     /opcao1 Prever vendas
+     /opcao2 Informações da loja
+     /novaLoja Informações sobre uma nova loja
+"""
+    bot.send_message(mensagem.chat.id, texto)
 
 def send_img(mensagem):
 
@@ -36,6 +47,7 @@ def maximo(mensagem):
     maxCustomers(store_id)
 
     send_img(mensagem)
+    next_action(mensagem)
 
 
 @bot.message_handler(commands=["media"])
@@ -49,6 +61,7 @@ def media(mensagem):
     meanCustomers(store_id)
 
     send_img(mensagem)
+    next_action(mensagem)
 
 
 @bot.message_handler(commands=["total"])
@@ -62,6 +75,7 @@ def total(mensagem):
     sumCustomers(store_id)
 
     send_img(mensagem)
+    next_action(mensagem)
 
 
 @bot.message_handler(commands=["comparacao"])
@@ -70,17 +84,23 @@ def comparacao(mensagem):
     compareMeanSales(store_id)
 
     send_img(mensagem)
+    next_action(mensagem)
 
 
 
 @bot.message_handler(commands=["opcao1"])
 def opcao1(mensagem):
     texto = f"""
-    Previsão de vendas nos próximos 90 dias para a Loja {store_id}
+    Previsão de vendas nos próximos 30 dias para a Loja {store_id}
     """
     bot.send_message(mensagem.chat.id, texto)
 
-    #send_img(mensagem)
+    total, mean, (max_day, max_sale) = predict_sales(store_id)
+    texto = f"""Total de Vendas: US$ {total:.0f}\nMédia de Vendas: US$ {mean:.2f}\nDia de Maior Venda: {max_day}(US$ {max_sale:.0f})"""
+    bot.send_message(mensagem.chat.id, texto)
+
+    send_img(mensagem)
+    next_action(mensagem)
 
 
 
