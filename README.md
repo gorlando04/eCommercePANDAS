@@ -45,7 +45,8 @@ TO DO
 
 ## Instanciando em um ambiente de Cloud
 
-TO DO
+Este projeto também está configurado para funcionar em um ambiente de nuvem, utilizando os serviços disponibilizados pela Oracle, que felizmente oferece um serviço gratuito de qualidade e que permite que uma máquina virtual seja instanciada. Como a configuração deste ambiente é um pouco mais extensa que a configuração via docker, será disponbilizado um arquivo ( [ ]() ) que contém os passos que devem ser seguidos para instanciar a máquina virtual
+
 
 ## Documentações
 
