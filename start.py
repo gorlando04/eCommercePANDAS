@@ -75,10 +75,14 @@ def comparacao(mensagem):
 
 @bot.message_handler(commands=["opcao1"])
 def opcao1(mensagem):
-    texto = """
-    Featura ainda não está pronta
+    texto = f"""
+    Previsão de vendas nos próximos 90 dias para a Loja {store_id}
     """
     bot.send_message(mensagem.chat.id, texto)
+
+    #send_img(mensagem)
+
+
 
 @bot.message_handler(commands=["opcao2"])
 def opcao2(mensagem):
