@@ -9,7 +9,7 @@ from functionalities.time_series import *
 
 
 # Chave da API que o bot foi criado.
-CHAVE_API = "6789241160:AAH5q8lbQuIvrEAmBEcExvOrASGnHNJQfEI"
+CHAVE_API = "geovanne"
 
 bot = telebot.TeleBot(CHAVE_API)
 
