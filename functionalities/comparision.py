@@ -63,7 +63,7 @@ def compareMeanSales(store_id_):
     x = list(order_1.values())
     y = list(order_1.keys())
 
-    title = f"Mean sales {store_type} store type x Mean sales Store-{store_id}"
+    title = f"Média de Vendas loja do tipo: {store_type} x Média de Venda loja {store_id}"
     
 
     x2 = list(order_2.values())
