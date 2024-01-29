@@ -41,7 +41,30 @@ python3 start.py
 
 ## Como fazer consultas
 
-TO DO
+Inicialmente é necessário acessar o seguinte link: [ChatBot](t.me/gabinho_bot)
+
+Após acessar o link é necessário se conectar a sua conta no telegram para poder interagir com o sistema.
+
+Os prints abaixo mostram como deve ser realizadas as buscas:
+
+![Screenshot from 2024-01-29 19-19-44](https://github.com/gorlando04/eCommercePANDAS/assets/91696970/458fb9f6-429c-428c-b797-7bf2a86d00e9)
+
+
+![Screenshot from 2024-01-29 19-20-08](https://github.com/gorlando04/eCommercePANDAS/assets/91696970/cb237dc4-701e-464e-b36b-14d5ff03e1a5)
+
+![Screenshot from 2024-01-29 19-20-21](https://github.com/gorlando04/eCommercePANDAS/assets/91696970/8dcc76b6-6d40-4faf-be94-756ba0b5fe9a)
+
+
+![Screenshot from 2024-01-29 19-20-38](https://github.com/gorlando04/eCommercePANDAS/assets/91696970/0849964e-fb54-4a6f-bf58-0911ecf2d7f3)
+
+
+![Screenshot from 2024-01-29 19-20-47](https://github.com/gorlando04/eCommercePANDAS/assets/91696970/ce837c45-aa66-474b-a94b-2e9fc37950cf)
+
+
+![Screenshot from 2024-01-29 19-21-02](https://github.com/gorlando04/eCommercePANDAS/assets/91696970/3c511a31-692a-413c-9aaf-c9433406beb3)
+
+
+
 
 ## Instanciando em um ambiente de Cloud
 
