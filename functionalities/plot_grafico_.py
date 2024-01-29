@@ -40,7 +40,7 @@ def plot_grafico(x, y,title,day=False,days=None):
         # Cria os nomes para o eixo X, o título, o label para o eixo Y e a legenda dos gráficos
     plt.xticks(y_pos, bars)
     plt.title(f"{title}")
-    plt.ylabel("Frequency")
+    plt.ylabel("Quantidade")
 
     plt.grid()
 
@@ -75,7 +75,7 @@ def plot_grafico_comparacao(x1,y1,x2,title,store_id,store_type):
         # Cria os nomes para o eixo X, o título, o label para o eixo Y e a legenda dos gráficos
     plt.xticks(y_pos, bars)
     plt.title(f"{title}")
-    plt.ylabel("Frequency")
+    plt.ylabel("Quantidade")
 
     plt.grid()
     plt.legend()
