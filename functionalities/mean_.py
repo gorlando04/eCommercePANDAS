@@ -36,7 +36,7 @@ def meanCustomers(store_id):
     x = list(order.values())
     y = list(order.keys())
 
-    title = f"Mean Customers for Store-{store_id}"
+    title = f"Média de Clientes para a loja {store_id}"
     plot_grafico(x,y,title)
 
 
@@ -65,5 +65,5 @@ def meanSales(store_id):
     x = list(order.values())
     y = list(order.keys())
 
-    title = f"Mean Sales for Store-{store_id}"
+    title = f"Média de Vendas para a loja {store_id}"
     plot_grafico(x,y,title)
