@@ -68,9 +68,9 @@ def plot_grafico_comparacao(x1,y1,x2,title,store_id,store_type):
 
     
 
-    plt.plot(y_pos,x1,color = 'r',label=f'Store-{store_id}',marker='o',markeredgecolor='black',markerfacecolor='black')
+    plt.plot(y_pos,x1,color = 'r',label=f'Loja {store_id}',marker='o',markeredgecolor='black',markerfacecolor='black')
 
-    plt.plot(y_pos,x2,color = 'b',label=f'{store_type} store_type',marker='o',markeredgecolor='black',markerfacecolor='black')
+    plt.plot(y_pos,x2,color = 'b',label=f'Tipo loja: {store_type}',marker='o',markeredgecolor='black',markerfacecolor='black')
    
         # Cria os nomes para o eixo X, o título, o label para o eixo Y e a legenda dos gráficos
     plt.xticks(y_pos, bars)
