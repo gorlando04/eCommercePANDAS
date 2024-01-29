@@ -44,7 +44,7 @@ def maxCustomers(store_id):
     y = list(order.keys())
     days = list(order2.values())
 
-    title = f"Max Customers for Store-{store_id}"
+    title = f"Máximo de Clientes para a loja {store_id}"
     plot_grafico(x,y,title,True,days)
 
 
@@ -87,5 +87,5 @@ def maxSales(store_id):
     y = list(order.keys())
     days = list(order2.values())
 
-    title = f"Max Sales for Store-{store_id}"
+    title = f"Máximo de Vendas para a loja {store_id}"
     plot_grafico(x,y,title,True,days)
