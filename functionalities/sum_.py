@@ -35,7 +35,7 @@ def sumCustomers(store_id):
     x = list(order.values())
     y = list(order.keys())
 
-    title = f"Total Customers for Store-{store_id}"
+    title = f"Total de Clientes da loja {store_id}"
     plot_grafico(x,y,title)
 
 
@@ -71,5 +71,5 @@ def sumSales(store_id):
     x = list(order.values())
     y = list(order.keys())
 
-    title = f"Total Customers for Store-{store_id}"
+    title = f"Total de Vendas da loja{store_id}"
     plot_grafico(x,y,title)
