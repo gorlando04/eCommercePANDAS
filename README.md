@@ -41,7 +41,7 @@ python3 start.py
 
 ## Como fazer consultas
 
-Inicialmente é necessário acessar o seguinte link: [ChatBot](t.me/gabinho_bot)
+Inicialmente é necessário acessar o seguinte link: t.me/gabinho_bot
 
 Após acessar o link é necessário se conectar a sua conta no telegram para poder interagir com o sistema.
 
