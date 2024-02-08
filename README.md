@@ -41,6 +41,7 @@ python3 start.py
 
 ## Como fazer consultas
 
+No seguinte link, é possível visualizar uma breve demonstração de como funciona nosso sistema: https://drive.google.com/file/d/1P2VVAOu1uaim3O5v6c6sRcJwr9EVh9vn/view?usp=sharing
 Inicialmente é necessário acessar o seguinte link: t.me/gabinho_bot
 
 Após acessar o link é necessário se conectar a sua conta no telegram para poder interagir com o sistema.
